@@ -14,16 +14,16 @@ const displayEntries = () => {
   const entries = retrieveEntries();
   
   const tableEntries = entries.map((entry) => {
-    const nameCell = `<td class='border px-4 py-2'>${entry.name}</td>`;
-    const emailCell = `<td class='border px-4 py-2'>${entry.email}</td>`;
-    const passwordCell = `<td class='border px-4 py-2'>${entry.password}</td>`;
-    const dobCell = `<td class='border px-4 py-2'>${entry.dob}</td>`;
-    const acceptTermsCell = `<td class='border px-4 py-2'>${entry.acceptedTermsAndconditions}</td>`;
-    const row = `<tr>${nameCell}${emailCell}${passwordCell}${dobCell}${acceptTermsCell}</tr>`;
+    const nameCelll = `<td class='border px-4 py-2'>${entry.name}</td>`;
+    const emailCelll = `<td class='border px-4 py-2'>${entry.email}</td>`;
+    const passwordCelll = `<td class='border px-4 py-2'>${entry.password}</td>`;
+    const dobCelll = `<td class='border px-4 py-2'>${entry.dob}</td>`;
+    const acceptTermsCelll = `<td class='border px-4 py-2'>${entry.acceptedTermsAndconditions}</td>`;
+    const row = `<tr>${nameCelll}${emailCelll}${passwordCelll}${dobCelll}${acceptTermsCelll}</tr>`;
     return row;
   }).join("\n");
 
-  const table = `<table class="table-auto w-full">
+  const tabl = `<table class="table-auto w-full">
                   <tr>
                     <th class="px-4 py-2">Name</th>
                     <th class="px-4 py-2">Email</th>
@@ -35,7 +35,7 @@ const displayEntries = () => {
                 </table>`;
 
   let details = document.getElementById("user-entries");
-  details.innerHTML = table;
+  details.innerHTML = tabl;
 };
 
 const calculateAge = (dob) => {
